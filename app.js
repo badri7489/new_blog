@@ -51,11 +51,10 @@ app.get("/posts/:postName", function (req, res) {
 	const requestedTitle = _.lowerCase(req.params.postName);
 	posts.forEach(function (post) {
 		if (requestedTitle === _.lowerCase(post.title)) {
-			console.log("Match Found");
-		} else {
-			console.log(requestedTitle);
+			res.render("post", { post: post });
 		}
 	});
+	res.redirect("/");
 });
 
 app.listen(3000, function () {
