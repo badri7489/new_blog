@@ -1,6 +1,9 @@
 body {
 	background-color: #bbe1fa;
 }
+h1 {
+	font-family: "Rubik Mono One", sans-serif;
+}
 .container-fluid {
 	padding-top: 70px;
 	padding-bottom: 70px;
